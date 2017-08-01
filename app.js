@@ -17,7 +17,7 @@ app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-var logStream = fs.createWriteStream(__dirname + '/logs', { flags: 'a' });
+var logStream = fs.createWriteStream(__dirname + '/server.log', { flags: 'a' });
 app.use(logger('combined', {
   stream: logStream
 }));
